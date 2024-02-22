@@ -1,0 +1,15 @@
+.icons-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icons-area a{
+    cursor: pointer;
+}
+.icons-area a {
+    margin: 25px 20px;
+    color: #fff;
+    /* Alterado para branco */
+    font-size: 30px;
+    /* Tamanho dos ícones */
+}

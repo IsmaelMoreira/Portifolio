@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ismael Portfolio</title>
+        <!-- Inclua a biblioteca Bootstrap Icons -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+            rel="stylesheet">
+        <!-- Inclua a biblioteca Bootstrap (opcional, se você estiver usando estilos de Bootstrap) -->
+        <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+        <!-- Inclua seus estilos personalizados -->
+        <link rel="stylesheet" href="/css/menubar.css">
+        <link rel="stylesheet" href="/css/styles.css">
+        <link rel="stylesheet" href="/css/background.css">
+        <link rel="stylesheet" href="/css/title.css">
+        <link rel="stylesheet" href="/css/icons.css">
+        <link rel="stylesheet" href="/css/button.css">
+    </head>
+    <body>
+        <main>
+            <!-- background -->
+            <div class="lines">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <!-- end background -->
+
+            <!-- PARTE DE NAV BAR  -->
+
+            <section class="header">
+                <nav>
+                    <div class="logo">
+                        <a href="#">Home</a>
+                    </div>
+                    <input type="checkbox" id="click">
+                    <label for="click" class="mainicon">
+                        <div class="menu">
+                            <!-- Use classes de Bootstrap Icons para o ícone do menu -->
+                            <i class="bi bi-list"></i>
+                        </div>
+                    </label>
+                    <ul>
+                        <li><a href="#">Sobre</a></li>
+                        <li><a href="#">Habilidades</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </nav>
+
+                <!-- title text -->
+                <div class="container-text">
+                    <div class="box-text">
+                        <h1 class="title">Ismael Moreira</h1>
+                        <span class="descricao"></span>
+                    </div>
+                </div>
+                <!-- end title text -->
+
+                <!-- icones abaixo do nome -->
+                <div class="icons-area">
+                    <a href="https://github.com/seu-usuario-do-github"
+                        target="_blank">
+                        <!-- Use classes de Bootstrap Icons para os ícones de redes sociais -->
+                        <i class="bi bi-github"></i> <!-- Ícone do GitHub -->
+                    </a>
+                    <a
+                        href="https://www.instagram.com/seu-usuario-do-instagram/"
+                        target="_blank">
+                        <i class="bi bi-instagram"></i>
+                        <!-- Ícone do Instagram -->
+                    </a>
+                    <a
+                        href="https://www.linkedin.com/in/seu-usuario-do-linkedin/"
+                        target="_blank">
+                        <i class="bi bi-linkedin"></i>
+                        <!-- Ícone do LinkedIn -->
+                    </a>
+                    <a href="tel:+1234567890">
+                        <i class="bi bi-telephone"></i>
+                        <!-- Ícone de telefone -->
+                    </a>
+                </div>
+                <!-- fim dos icones -->
+
+                <!-- button que serve para fazer o download do currículo -->
+                <button class="btn" ">
+                    <a class="btn-a" href="/curriculo/my-cv.pdf" download><span class="button">Download CV</span></a>
+                </button>
+                
+                <!-- fim -->
+
+            </section>
+
+        </main>
+        <script
+            src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <script>
+        var typed = new Typed(".descricao", {
+            strings: [
+                "Um Desenvolvedor Front-end.",
+                "Um Desenvolvedor Back-end.",
+                "Um Artista Visual.",
+                "Um Designer de Interfaces.",
+                "Um Programador de JavaScript.",
+                "Um Especialista em Banco de Dados.",
+                "Um Criativo em UX/UI.",
+                "Um Mestre em CSS e HTML.",
+                "Um Gênio em PHP.",
+                "Um Talentoso em Python.",
+                "Um Expert em Frameworks.",
+                "Um Profissional em UI/UX.",
+                "Um Mago do Design Responsivo.",
+                "Um Apaixonado por Tecnologia.",
+                "Um Entusiasta de Inovação.",
+                "Um Visionário em Desenvolvimento Web."
+            ],
+            typeSpeed: 100,
+            backSpeed: 100,
+            loop: true
+        })
+    </script>
+        <script src="script.js"></script>
+    </body>
+</html>
