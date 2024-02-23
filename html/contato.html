@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/menubar.css">
+        <link rel="stylesheet" href="/css/background-cont.css">
+        <link rel="stylesheet" href="/css/form.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+
+        <title>Document</title>
+    </head>
+    <body>
+        <main>
+            <!-- menu-bar e icones -->
+            <section class="content">
+                <nav>
+                    <div class="logo">
+                        <a href="#">Home</a>
+                    </div>
+                    <input type="checkbox" id="click">
+                    <label for="click" class="mainicon">
+                        <div class="menu">
+                            <!-- Use classes de Bootstrap Icons para o ícone do menu -->
+                            <i class="bi bi-list"></i>
+                        </div>
+                    </label>
+                    <ul>
+                        <li><a href="#">Sobre</a></li>
+                        <li><a href="/html/skill.html">Habilidades</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </nav>
+            </section>
+            <!-- fim -->
+            <hr>
+            <!-- Enviar mensagem por email -->
+            <section class="form">
+                <div class="container">
+                    <div class="content">
+                        <div class="left-side">
+                            <div class="address details">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div class="topic">Endereço</div>
+                                <div class="text-one">Maranhão, São Luís</div>
+                                <div class="text-two">Brasil</div>
+                            </div>
+                            <div class="phone details">
+                                <i class="fas fa-phone-alt"></i>
+                                <div class="topic">Telefone</div>
+                                <div class="text-one">+0098 9893 5647</div>
+                                <div class="text-two">+0096 3434 5678</div>
+                            </div>
+                            <div class="email details">
+                                <i class="fas fa-envelope"></i>
+                                <div class="topic">Email</div>
+                                <div class="text-one">codinglab@gmail.com</div>
+                                <div
+                                    class="text-two">info.codinglab@gmail.com</div>
+                            </div>
+                        </div>
+                        <div class="right-side">
+                            <div class="topic-text">Me envie uma mensagem
+                                !</div>
+                            <p>Se você tiver algum trabalho para mim ou qualquer
+                                tipo de dúvida relacionada ao meu Portfolio,
+                                você pode me enviar uma mensagem daqui. É um
+                                prazer responder você.</p>
+                            <form action="#" method="POST">
+                                <!-- Adicionado o atributo method -->
+                                <div class="input-box">
+                                    <input type="text"
+                                        placeholder="Digite seu nome">
+                                </div>
+                                <div class="input-box">
+                                    <input type="text"
+                                        placeholder="Digite seu email">
+                                </div>
+                                <div class="input-box message-box">
+                                    <textarea
+                                        placeholder="Digite sua mensagem"></textarea>
+                                    <!-- Adicionado textarea para a mensagem -->
+                                </div>
+                                
+                                <button class="animated-button">
+                                    <span>Enviar Agora</span>
+                                    <span></span>
+                                </button>
+                                
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </body>
+</html>
