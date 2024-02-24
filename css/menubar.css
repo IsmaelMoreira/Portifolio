@@ -77,7 +77,7 @@
     }
     li a.active,
     li a:hover {
-        color: #fff;
+        color: #ababab;
         transition: all .3s ease-in-out
     }
 

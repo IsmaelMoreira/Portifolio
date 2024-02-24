@@ -6,11 +6,12 @@
         <link rel="stylesheet" href="/css/menubar.css">
         <link rel="stylesheet" href="/css/background-cont.css">
         <link rel="stylesheet" href="/css/form.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
         <link rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
-            <link rel="stylesheet" href="/css/info.css">
-            <link
+        <link rel="stylesheet" href="/css/info.css">
+        <link
             href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
             rel="stylesheet">
         <title>Document</title>
@@ -31,30 +32,36 @@
                         </div>
                     </label>
                     <ul>
-                        <li><a href="#">Sobre</a></li>
+                        <li><a href="/html/about.html">Sobre</a></li>
                         <li><a href="/html/skill.html">Habilidades</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Contato</a></li>
+                        <li><a href="/html/port.html">Portfolio</a></li>
+                        <li><a href="/html/contato.html">Contato</a></li>
                     </ul>
                 </nav>
                 <div class="title-right">
                     Aqui Você pode encontrar algumas formas de falar comigo
                 </div>
-                
+
                 <div class="icons">
                     <!-- GitHub Icon -->
-                    <a href="https://github.com" target="_blank" title="Visitar GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://github.com" target="_blank"
+                        title="Visitar GitHub"><i class="fab fa-github"></i></a>
                     <!-- Facebook Icon -->
-                    <a href="https://facebook.com" target="_blank" title="Visitar Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="https://facebook.com" target="_blank"
+                        title="Visitar Facebook"><i
+                            class="fab fa-facebook"></i></a>
                     <!-- WhatsApp Icon -->
-                    <a href="https://wa.me/yourphonenumber" target="_blank" title="Enviar mensagem pelo WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://wa.me/yourphonenumber" target="_blank"
+                        title="Enviar mensagem pelo WhatsApp"><i
+                            class="fab fa-whatsapp"></i></a>
                     <!-- Telephone Icon -->
-                    <a href="tel:+1234567890" title="Ligar"><i class="fas fa-phone"></i></a>
+                    <a href="tel:+1234567890" title="Ligar"><i
+                            class="fas fa-phone"></i></a>
                     <!-- Email Icon -->
-                    <a href="mailto:youremail@example.com" title="Enviar email"><i class="far fa-envelope"></i></a>
+                    <a href="mailto:youremail@example.com"
+                        title="Enviar email"><i class="far fa-envelope"></i></a>
                 </div>
-                
-                
+
             </section>
             <!-- fim -->
 
@@ -72,15 +79,16 @@
                             <div class="phone details">
                                 <i class="fas fa-phone-alt"></i>
                                 <div class="topic">Telefone</div>
-                                <div class="text-one">+0098 9893 5647</div>
-                                <div class="text-two">+0096 3434 5678</div>
+                                <div class="text-one">+55 98 99970-2520</div>
+                                <div class="text-two"></div>
                             </div>
                             <div class="email details">
                                 <i class="fas fa-envelope"></i>
                                 <div class="topic">Email</div>
-                                <div class="text-one">codinglab@gmail.com</div>
                                 <div
-                                    class="text-two">info.codinglab@gmail.com</div>
+                                    class="text-one">moreiraismael14@gmail.com</div>
+                                <div
+                                    class="text-two"></div>
                             </div>
                         </div>
                         <div class="right-side">
@@ -90,33 +98,50 @@
                                 tipo de dúvida relacionada ao meu Portfolio,
                                 você pode me enviar uma mensagem daqui. É um
                                 prazer responder você.</p>
-                            <form action="#" method="POST">
-                                <!-- Adicionado o atributo method -->
+                            <form action="/php/process_form.php" method="POST">
                                 <div class="input-box">
-                                    <input type="text"
+                                    <input type="text" name="name"
                                         placeholder="Digite seu nome">
                                 </div>
                                 <div class="input-box">
-                                    <input type="text"
+                                    <input type="text" name="email"
                                         placeholder="Digite seu email">
                                 </div>
                                 <div class="input-box message-box">
-                                    <textarea
+                                    <textarea name="message"
                                         placeholder="Digite sua mensagem"></textarea>
-                                    <!-- Adicionado textarea para a mensagem -->
                                 </div>
-                                
-                                <button class="animated-button">
+
+                                <button type="submit" class="animated-button">
                                     <span>Enviar Agora</span>
                                     <span></span>
                                 </button>
-                                
                             </form>
+
                         </div>
                     </div>
                 </div>
             </section>
 
         </main>
+
+        <script>
+            // Obtém o caminho da página atual
+            var path = window.location.pathname;
+            // Remove a barra inicial do caminho
+            var page = path.split("/").pop();
+        
+            // Obtém todos os elementos li
+            var listItems = document.querySelectorAll('ul li');
+        
+            // Itera sobre os elementos li para encontrar o link correspondente à página atual
+            listItems.forEach(function(item) {
+                var link = item.querySelector('a');
+                if (link.getAttribute('href') === '/' + page) {
+                    item.classList.add('active');
+                }
+            });
+        </script>
+
     </body>
 </html>
